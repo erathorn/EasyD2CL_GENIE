@@ -8,6 +8,8 @@ Clone the repository and install the dependencies:
 
 First cd into the project directory then run:
 
+Create a folder inside the project directory called "data".
+
 ```bash
 $> julia --project -i -e 'using Pkg; Pkg.instantiate()'
 ```
