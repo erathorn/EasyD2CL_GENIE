@@ -77,26 +77,58 @@ row([
     ]
 )]
 )
-row(
-    [cell(
-        class="st-module",
-        [mycard("Info", :network_infos)]
-    )]
-)
+
 
 row([
+    
+    cell(
+        h4("In Connections"),
+        class="st-module",
+        [mycard("Info", :network_infos)],   
+    )
+    cell(
+        h4("Out Connections"),
+        class="st-module",
+        [mycard("Info", :network_infos_2)]
+    )
+])
+
+row([
+    
      cell(
           class="st-module",
           [
-           h5("Network Gold Standard")
-           plot(:network_gs, layout=:Layout_Network)
+           h5("Network Gold Standard In connections")
+           plot(:network_gs_in, layout=:Layout_Network)
           ]
          )
     cell(
           class="st-module",
           [
-           h5("Network Estimated")
-           plot(:network_est, layout=:Layout_Network)
+           h5("Network Estimated In connections")
+           plot(:network_est_in, layout=:Layout_Network)
+          ]
+         )
+      
+    ])
+
+
+
+row([
+    
+    
+     cell(
+          class="st-module",
+          [
+           h5("Network Gold Standard Out Connections")
+           plot(:network_gs_out, layout=:Layout_Network)
+          ]
+         )
+    cell(
+          class="st-module",
+          [
+           h5("Network Estimated Out Connections")
+           plot(:network_est_out, layout=:Layout_Network)
           ]
          )
       
