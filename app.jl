@@ -6,7 +6,7 @@ import Stipple: js_methods
 @genietools
 
 # Logic goes here
-const FILE_PATH = joinpath("data2")
+const FILE_PATH = joinpath("data")
 mkpath(FILE_PATH)
 
 @app begin
