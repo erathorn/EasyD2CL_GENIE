@@ -77,7 +77,12 @@ row([
     ]
 )]
 )
-
+row(
+    [cell(
+        class="st-module",
+        [mycard("Info", :network_infos)]
+    )]
+)
 
 row([
      cell(
